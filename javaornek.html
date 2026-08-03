@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Örnek</title>
 </head>
+
 <body>
-<div lang="Anasayfa">
-    <h1>JavaScript Örnek Sayfası</h1>
-    <p>Bu sayfa, JavaScript kodlarının nasıl çalıştığını göstermek için hazırlanmıştır.</p>
-</div>
+    <div lang="Anasayfa">
+        <h1>JavaScript Örnek Sayfası</h1>
+        <p>Bu sayfa, JavaScript kodlarının nasıl çalıştığını göstermek için hazırlanmıştır.</p>
+    </div>
 
 
 </body>
 <script>
     // JavaScript kodu buraya gelecek
-    var x=3, y=4;
-    var z = Math.sqrt(x*x + y*y);
+    var x = 3, y = 4;
+    var z = Math.sqrt(x * x + y * y);
     document.write("Hipotenüs uzunluğu: " + z);
     // alert("Hipotenüs uzunluğu: " + z);
     // alert("Bu bir JavaScript örneğidir!");
@@ -26,5 +28,34 @@
     /*
     Açıklama satırları, kodun çalışmasını etkilemez ve genellikle kodu açıklamak veya notlar eklemek için kullanılır.
     */
+
+
+
+
+
+    alert("Bu bir JavaScript örneğidir!");
+
+    alert("Merhaba, Dünya!");
+    alert("Hipotenüs uzunluğu: " + z) /* javascript bazen noktalı virgülü görmezden hata verebilir, bu yüzden noktalı virgül kullanmak iyi bir alışkanlıktır. */
+
+
+
+
+
+    var a = 5; b = 10; c = a + b;
+    document.write("<br>Toplam: " + c);
+
+
+    var name = prompt("Lütfen adınızı girin:");
+    alert("Merhaba, " + name + "!");
+
+
+
+
+
+    /* sabit değişkenler için const kullanılır. const ile tanımlanan değişkenin değeri değiştirilemez. */
+    const pi = 3.14;
+    document.write("<br>Pi sayısı: " + pi);
 </script>
+
 </html>
