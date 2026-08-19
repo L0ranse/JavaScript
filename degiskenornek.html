@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Örnek</title>
+</head>
+
+<body>
+    <script>
+        var d;
+        document.write("d: " + d);
+        document.write("<br>"); // alt satıra geçmek için <br> etiketi kullanılır
+
+        var ad = "Ali";
+        var soyad = 'Veli';
+        document.write(ad + " " + soyad);
+
+
+
+        var cumle = "JavaScript'te 'değişkenler' çok önemlidir.";
+        document.write("<br>");
+        document.write("cumle: " + cumle);
+
+
+
+        var x = 5 + "cümlenin başında 5 var";
+        document.write("<br>");
+        document.write("x: " + x);
+
+
+        var y = "5" + 5;
+        document.write("<br>");
+        document.write("y: " + y);
+
+
+        var z = 5 + 5 + "5";
+        document.write("<br>");
+        document.write("z: " + z);
+
+
+        var a = "Bilimsel" + 3.14 + "Düşünme"; // değişkene atılan ilk değer sözelse diğerleri de sözsel olarak kabul edilir
+        document.write("<br>");
+        document.write("a: " + a);
+
+
+
+        var t = 3 + 5 + "Akademi"; // değişkene atanan ilk değer sayısal ise diğerleri de sayısal olarak kabul edilir. Sonraki değer sözsel olursa tüm değerler sözsel olarak kabul edilir. Sözel sayısal değerler birleştirilirken sayısal değerler sözsel değerlere dönüştürülür.
+        document.write("<br>");
+        document.write("t: " + t);
+    </script>
+
+</body>
+
+</html>
