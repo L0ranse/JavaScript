@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Örnek</title>
+</head>
+
+<body>
+    <script>
+        var s1 = Number(prompt("Lütfen bir sayı giriniz: "));
+        // s1 = Number(s1); // prompt ile alınan değer string tipindedir. Bu nedenle sayısal bir işlem yapabilmek için Number() fonksiyonu ile sayısal değere dönüştürülmelidir.
+        document.write("s1: " + s1);
+        var s2 = Number(prompt("Lütfen bir sayı giriniz: "));
+        // s2 = Number(s2);
+        document.write("<br>");
+        document.write("s2: " + s2);
+        var toplam = s1 + s2;
+        document.write("<br>");
+        document.write("toplam: " + toplam);
+    </script>
+    <h1>JavaScript Örnek</h1>
+    <p> <code>prompt()</code> fonksiyonu ile kullanıcıdan alınan değerler string tipindedir. Bu nedenle sayısal bir
+        işlem yapabilmek
+        için <code>Number()</code> fonksiyonu ile sayısal değere dönüştürülmelidir. Aksi takdirde, sayısal işlemler
+        yerine string
+        birleştirme işlemi yapılır.</p>
+</body>
+
+</html>
