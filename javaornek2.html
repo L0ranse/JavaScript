@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Örnek</title>
+</head>
+
+<body>
+    <h1 id="baslik">Merhaba, Dünya!</h1>
+    <h2 id="altbaslik"></h2>
+    <h3 id="altbaslik2"></h3>
+    <script>
+        var ad = "Bu bir ikinci alt başlıktır.";
+        document.getElementById("baslik").innerHTML = "JavaScript ile Başlık Değiştirildi!";
+        document.getElementById("baslik").style.color = "blue";
+        document.getElementById("baslik").style.fontSize = "24px";
+        document.getElementById("altbaslik").innerHTML = "Bu bir alt başlıktır.";
+        document.getElementById("altbaslik").style.color = "green";
+        document.getElementById("altbaslik").style.fontSize = "18px";
+        document.getElementById("altbaslik2").innerHTML = "" + ad;
+        document.getElementById("altbaslik2").style.color = "red";
+        document.getElementById("altbaslik2").style.fontSize = "16px"; 
+        // js ile html elementlerini değiştirebiliriz.
+    </script>
+
+</body>
+
+</html>

@@ -15,6 +15,11 @@
             "request": "attach"
         },
         {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach"
+        },
+        {
             "name": "Attach to Chrome",
             "port": 9222,
             "request": "attach",
