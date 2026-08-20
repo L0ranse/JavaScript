@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Örnek</title>
+</head>
+
+<body>
+    <script>
+        // Değişkenleri tanımlayalım
+        var a = Number(prompt("Birinci sayıyı giriniz:"));
+        var b = Number(prompt("İkinci sayıyı giriniz:"));
+
+        // Matematiksel işlemleri gerçekleştirelim
+        var toplam = a + b;
+        var fark = a - b;
+        var carpim = a * b;
+        var bolum = a / b;
+        var mod = a % b;
+        var us = a ** b;
+        var kucuk = Math.min(a, b);
+        var buyuk = Math.max(a, b);
+        var mutlak = Math.abs(a - b);
+        var yuvarla = Math.round(bolum);
+        var taban = Math.floor(bolum);
+        var tavan = Math.ceil(bolum);
+        var karekok = Math.sqrt(a);
+        var logaritma = Math.log(a);
+        var sin = Math.sin(a);
+        var cos = Math.cos(a);
+        var tan = Math.tan(a);
+        var pi = Math.PI;
+        var e = Math.E;
+        var rastgele = Math.random();
+        var faktoriyel = 1;
+        for (var i = 1; i <= a; i++) {
+            faktoriyel *= i;
+        }
+        var mutlakDeger = Math.abs(a);
+
+        // Sonuçları ekrana yazdıralım
+        alert("Toplam: " + toplam + "\nFark: " + fark + "\nÇarpım: " + carpim + "\nBölüm: " + bolum + "\nMod: " + mod + "\nÜs: " + us + "\nKüçük: " + kucuk + "\nBüyük: " + buyuk + "\nMutlak Değer: " + mutlakDeger + "\nYuvarla: " + yuvarla + "\nTaban: " + taban + "\nTavan: " + tavan + "\nKarekök: " + karekok + "\nLogaritma: " + logaritma + "\nSinüs: " + sin + "\nKosünüs: " + cos + "\nTanjant: " + tan + "\nPi: " + pi + "\nE: " + e + "\nRastgele Sayı: " + rastgele.toFixed(2) + "\nFaktöriyel: " + faktoriyel);
+
+        // Sonuçları console.log ile de yazdıralım
+        console.log(`Matematiksel İşlemler
+    Toplam: ${toplam}
+    Fark: ${fark}
+    Çarpım: ${carpim}
+    Bölüm: ${bolum}
+    Mod: ${mod}
+    Üs: ${us}
+    Küçük: ${kucuk}
+    Büyük: ${buyuk}
+    Mutlak Değer: ${mutlakDeger}
+    Yuvarla: ${yuvarla}
+    Taban: ${taban}
+    Tavan: ${tavan}
+    Karekök: ${karekok}
+    Logaritma: ${logaritma}
+    Sinüs: ${sin}
+    Kosünüs: ${cos}
+    Tanjant: ${tan}
+    Pi: ${pi}
+    E: ${e}
+    Rastgele Sayı: ${rastgele.toFixed(2)}
+    Faktöriyel: ${faktoriyel}`);
+
+        // Sonuçları HTML sayfasına yazdıralım
+        document.write(`<h1>Matematiksel İşlemler</h1>
+            <p>Toplam: ${toplam}</p>
+            <p>Fark: ${fark}</p>
+            <p>Çarpım: ${carpim}</p>
+            <p>Bölüm: ${bolum}</p>
+            <p>Mod: ${mod}</p>
+            <p>Üs: ${us}</p>
+            <p>Küçük: ${kucuk}</p>
+            <p>Büyük: ${buyuk}</p>
+            <p>Mutlak Değer: ${mutlakDeger}</p>
+            <p>Yuvarla: ${yuvarla}</p>
+            <p>Taban: ${taban}</p>
+            <p>Tavan: ${tavan}</p>
+            <p>Karekök: ${karekok}</p>
+            <p>Logaritma: ${logaritma}</p>
+            <p>Sinüs: ${sin}</p>
+            <p>Kosünüs: ${cos}</p>
+            <p>Tanjant: ${tan}</p>
+            <p>Pi: ${pi}</p>
+            <p>E: ${e}</p>
+            <p>Rastgele Sayı: ${rastgele.toFixed(2)}</p>
+            <p>Faktöriyel: ${faktoriyel}</p>`);
+    </script>
+
+</body>
+
+</html>

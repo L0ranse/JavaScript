@@ -5,39 +5,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": ".NET Core Attach",
-            "type": "coreclr",
-            "request": "attach"
-        },
-        {
-            "name": ".NET Core Attach",
-            "type": "coreclr",
-            "request": "attach"
-        },
-        {
-            "name": ".NET Core Attach",
-            "type": "coreclr",
-            "request": "attach"
-        },
-        {
-            "name": "Attach to Chrome",
-            "port": 9222,
-            "request": "attach",
-            "type": "chrome",
-            "webRoot": "${workspaceFolder}"
-        },
-        
-        {
-            "name": ".NET Core Attach",
-            "type": "coreclr",
-            "request": "attach"
-        },
-
-        {
+            "name": "Open current HTML file",
             "type": "msedge",
             "request": "launch",
-            "name": "Open javaornek.html",
-            "file": "c:\\Users\\hfg00\\OneDrive\\Desktop\\JavaScript\\javaornek.html"
+            "file": "${file}"
         }
     ]
 }
