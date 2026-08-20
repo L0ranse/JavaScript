@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Örnek</title>
+</head>
+
+<body>
+    <script>
+        // Eşitlik ve Karşılaştırma Operatörleri
+
+        // Kullanıcıdan iki sayı al
+        var x = prompt("Bir sayı girin:");
+        var y = prompt("Bir sayı daha girin:");
+
+        // Eşitlik ve karşılaştırma operatörlerini kullanarak karşılaştırma yap
+        document.write("x: " + x + ", y: " + y + "<br>");
+        if (x == y) {
+            document.write("x ve y eşittir (==)<br>");
+        }
+        else if (x === y) {
+            document.write("x ve y hem değer hem de tür olarak eşittir (===)<br>");
+        }
+        else if (x != y) {
+            document.write("x ve y eşit değildir (!=)<br>");
+        }
+        else if (x !== y) {
+            document.write("x ve y hem değer hem de tür olarak eşit değildir (!==)<br>");
+        }
+        else if (x > y) {
+            document.write("x, y'den büyüktür (>)<br>");
+        }
+        else if (x < y) {
+            document.write("x, y'den küçüktür (<)<br>");
+        }
+        else if (x >= y) {
+            document.write("x, y'ye eşit veya büyüktür (>=)<br>");
+        }
+        else if (x <= y) {
+            document.write("x, y'ye eşit veya küçüktür (<=)<br>");
+        }
+        else if (x != y) {
+            document.write("x ve y eşit değildir (!=)<br>");
+        }
+        else if (x !== y) {
+            document.write("x ve y hem değer hem de tür olarak eşit değildir (!==)<br>");
+        }
+        else {
+            document.write("x ve y eşit değildir (==)<br>");
+        }
+    </script>
+
+</body>
+
+</html>
