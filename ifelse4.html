@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Örnek</title>
+</head>
+
+<body>
+    <script>
+        var yas = Number(prompt("Yaşınızı giriniz:"));
+        document.write("Yaşınız: " + yas);
+        document.write("<br>");
+        if (yas < 2) {
+            document.write("Bebek");
+            document.write("<br>");
+        } else if (yas < 12) {
+            document.write("Çocuk");
+            document.write("<br>");
+        } else if (yas < 18) {
+            document.write("Genç");
+            document.write("<br>");
+        } else if (yas < 65) {
+            document.write("Yetişkin");
+            document.write("<br>");
+        } else {
+            document.write("Yaşlı");
+            document.write("<br>");
+        }
+    </script>
+
+</body>
+
+</html>
