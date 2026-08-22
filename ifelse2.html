@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Örnek</title>
+</head>
+
+<body>
+    <script>
+        // vize final not ortalaması hesaplatma programı
+
+        alert("Not ortalaması hesaplama programına hoşgeldiniz.");
+        var vize = Number(prompt("Vize notunuzu giriniz:"));
+        var final = Number(prompt("Final notunuzu giriniz:"));
+        var ortalama = (vize * 0.4) + (final * 0.6);
+        document.write("Vize Notunuz: " + vize);
+        document.write("<br>");
+        document.write("Final Notunuz: " + final);
+        document.write("<br>");
+        if (ortalama < 50) { // ders geçme notu 50'dir. 50'nin altında kalan öğrenciler dersten kalır.
+            document.write("Ortalamanız: " + ortalama + "<br>");
+            document.write("<i>Dersten kaldınız.</i>");
+        } else {
+            document.write("Ortalamanız: " + ortalama + "<br>");
+            document.write("<i>Dersten geçtiniz.</i>");
+        }
+        document.write("<br>");
+        document.write("<b><i>Not ortalamanız: " + ortalama + "</i></b>");
+        document.write("<br>");
+        document.write("Harf notu: " + "<b>" + (ortalama >= 90 ? "AA" : ortalama >= 80 ? "BA" : ortalama >= 70 ? "BB" : ortalama >= 60 ? "CB" : ortalama >= 50 ? "CC" : "FF") + "</b>"); // harf notu hesaplama
+    </script>
+
+</body>
+
+</html>

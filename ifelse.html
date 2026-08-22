@@ -10,16 +10,24 @@
 <body>
     <script>
         var yas = Number(prompt("Yaşınızı giriniz:"));
+        //     if (yas < 18) {
+        //         alert("Reşit değilsiniz.");
+        //     } else {
+        //         alert("Reşitsiniz.");
+        //     }
+        //     document.write("Yaşınız: " + yas);
+        //     document.write("<br>");
+        //     document.write("Reşitlik Durumu: " + (yas < 18 ? "Reşit değilsiniz." : "Reşitsiniz."));
+        //     document.write("<br>");
+        //     document.write("Sitemize hoşgeldiniz.");
+
         if (yas < 18) {
-            alert("Reşit değilsiniz.");
+            document.write("Reşit değilsiniz.<br> <i><b>Veli izni ile giriş yapabilirsiniz.</b></i>");
         } else {
-            alert("Reşitsiniz.");
+            document.write("Reşitsiniz.");
+            document.write("<br>");
+            document.write("<i><b>Sitemize hoşgeldiniz.</b></i>");
         }
-        document.write("Yaşınız: " + yas);
-        document.write("<br>");
-        document.write("Reşitlik Durumu: " + (yas < 18 ? "Reşit değilsiniz." : "Reşitsiniz."));
-        document.write("<br>");
-        document.write("Sitemize hoşgeldiniz.");
     </script>
 
 </body>
