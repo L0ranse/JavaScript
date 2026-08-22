@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Örnek</title>
+</head>
+
+<body>
+    <script>
+        var sayi, karesi;
+        sayi = Number(prompt("Bir sayı giriniz:"));
+        if (sayi < 0) {
+            // document.write("Negatif sayı girdiniz.");
+            // document.write("<br>");
+            // document.write("Lütfen farklı bir sayı giriniz. (f5 ile sayfayı yenileyebilirsiniz.)");
+            alert("Negatif sayı girdiniz. Lütfen farklı bir sayı giriniz. (f5 ile sayfayı yenileyebilirsiniz.)");
+        } else if (sayi == 0) {
+            // document.write("Sıfır girdiniz.");
+            // document.write("<br>");
+            alert("Sıfır girdiniz.");
+        } else {
+            karesi = sayi * sayi;
+            // document.write("Girdiğiniz sayının karesi: " + karesi);
+            // document.write("<br>");
+            alert("Girdiğiniz sayının karesi: " + karesi);
+        }
+    </script>
+
+</body>
+
+</html>
