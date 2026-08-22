@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Örnek</title>
+</head>
+
+<body>
+    <script>
+        var r, alan, cevre;
+
+        r = Number(prompt("Dairenin yarıçapını giriniz:"));
+
+        if (r < 0) {
+            // document.write("Hatalı giriş yaptınız. Lütfen pozitif bir sayı giriniz.");
+            alert("Hatalı giriş yaptınız. Lütfen pozitif bir sayı giriniz.");
+        }
+        else if (r == 0) {
+            // document.write("Dairenin yarıçapı sıfır olamaz.");
+            alert("Dairenin yarıçapı sıfır olamaz.");
+        }
+        else {
+            alan = Math.PI * r * r;
+            cevre = 2 * Math.PI * r;
+
+            // document.write("Dairenin yarıçapı: " + r + "<br>");
+            // document.write("Dairenin alanı: " + alan.toFixed(2) + "<br>");
+            // document.write("Dairenin çevresi: " + cevre.toFixed(2));
+            alert("Dairenin yarıçapı: " + r + "\nDairenin alanı: " + alan.toFixed(2) + "\nDairenin çevresi: " + cevre.toFixed(2));
+        }
+    </script>
+
+</body>
+
+</html>
