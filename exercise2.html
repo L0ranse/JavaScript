@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Örnek</title>
+</head>
+
+<body>
+    <script>
+        // var vize = Number(prompt("Vize notunuzu giriniz:"));
+        // var final = Number(prompt("Final notunuzu giriniz:"));
+
+        // var ortalama = (vize * 0.4) + (final * 0.6);
+
+        // if (ortalama >= 50) {
+        //     document.write("Ortalamanız: " + ortalama + "<br>");
+        //     document.write("Tebrikler, <b>dersi geçtiniz</b>.");
+        // } else {
+        //     document.write("Ortalamanız: " + ortalama + "<br>");
+        //     document.write("Üzgünüz, <b>dersi geçemediniz</b>.");
+        // }
+
+        // document.write("<br>");
+        // document.write("Harf Notunuz: " + (ortalama >= 90 ? "AA" : ortalama >= 85 ? "BA" : ortalama >= 80 ? "BB" : ortalama >= 75 ? "CB" : ortalama >= 70 ? "CC" : ortalama >= 65 ? "DC" : ortalama >= 60 ? "DD" : "FF"));
+        // document.write("<br>");
+        // document.write("<i>Not: Vize notu %40, Final notu %60 etkili olacaktır.</i>");
+
+
+
+        var havaSicaklik = prompt("Hava sıcaklığını giriniz:");
+        havaSicaklik = Number(havaSicaklik);
+
+        if (havaSicaklik < 0) {
+            document.write("Sıcaklık: " + havaSicaklik + "°C<br>");
+            document.write("Hava çok soğuk, dışarı çıkmayın.");
+        } else if (havaSicaklik >= 0 && havaSicaklik < 10) {
+            document.write("Sıcaklık: " + havaSicaklik + "°C<br>");
+            document.write("Hava soğuk, kalın giyinin.");
+        } else if (havaSicaklik >= 10 && havaSicaklik < 20) {
+            document.write("Sıcaklık: " + havaSicaklik + "°C<br>");
+            document.write("Hava serin, hafif giyinin.");
+        } else if (havaSicaklik >= 20 && havaSicaklik < 30) {
+            document.write("Sıcaklık: " + havaSicaklik + "°C<br>");
+            document.write("Hava sıcak, ince giyinin.");
+        } else {
+            document.write("Sıcaklık: " + havaSicaklik + "°C<br>");
+            document.write("Hava çok sıcak, güneşten korunmak için şapka takın ve bol su için.");
+        }
+
+    </script>
+
+</body>
+
+</html>
