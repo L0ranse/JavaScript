@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Örnek</title>
+</head>
+
+<body>
+    <script>
+        var ortalama = Number(prompt("Ortalamanızı giriniz:"));
+        document.write("Ortalamanız: " + ortalama + "<br>");
+        document.write("Durumunuz: ");
+        if (ortalama < 50) {
+            document.write("Kaldınız.");
+        } else if (ortalama >= 50 && ortalama < 70) {
+            document.write("Orta.");
+        } else if (ortalama >= 70 && ortalama < 85) {
+            document.write("İyi.");
+        } else {
+            document.write("Pekiyi.");
+        }
+
+        document.write("<br>");
+        document.write("Harf notu: " + "<b>" + (ortalama >= 90 ? "AA" : ortalama >= 80 ? "BA" : ortalama >= 70 ? "BB" : ortalama >= 60 ? "CB" : ortalama >= 50 ? "CC" : "FF") + "</b>"); // harf notu hesaplama
+    </script>
+
+</body>
+
+</html>
