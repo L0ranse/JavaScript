@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Örnek</title>
+</head>
+
+<body>
+    <script>
+        // sonsuza kadar olan sayıları ekrana yazdıran bir sonsuz döngü
+        var sayac = 1;
+        while (true) {
+            console.log("Döngü sayısı: " + sayac);
+            // alert("Döngü sayısı: " + sayac);
+            document.write("Döngü sayısı: " + sayac + "<br>");
+            sayac++;
+        }
+
+        // ölü döngü örneği
+        while (false) {
+            console.log("bu döngü çalışmaz.");
+        }
+
+        //  başka bir ölü döngü örneği
+        for (var i = 0; i < 10; i--) {
+            console.log("bu döngü de çalışmaz.");
+        }
+        var x = 0;
+        var y = 10;
+        while (x > y) {
+            console.log("x: " + x + ", y: " + y);
+            x++;
+            y--;
+        } // bu döngü de çalışmaz çünkü x > y koşulu sağlanmaz
+    </script>
+
+</body>
+
+</html>

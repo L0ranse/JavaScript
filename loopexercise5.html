@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="tr">
+     
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Örnek</title>
+</head>
+
+<body>
+    <script>
+    //   // Üç farklı döngüyle mini yıldız piramidi
+    //   var satir = Number(prompt("Kaç satırlık bir piramit istiyorsunuz? (1-10)"));
+
+    //   if (satir >= 1 && satir <= 10) {
+    //     var sonuc = "<h2>Yıldız Piramidi</h2>";
+
+    //     // for: Her satırın yıldızlarını oluşturur.
+    //     for (var i = 1; i <= satir; i++) {
+    //       var yildizlar = "";
+    //       var j = 0;
+
+    //       // while: Satırdaki yıldız sayısını tamamlar.
+    //       while (j < i) {
+    //         yildizlar += "★ ";
+    //         j++;
+    //       }
+
+    //       sonuc += "<div>" + yildizlar + "</div>";
+    //     }
+
+    //     // do-while: Kullanıcıdan teşekkür mesajını en az bir kez gösterir.
+    //     var mesaj;
+    //     do {
+    //       mesaj = prompt("Piramit hazır! Bir mesaj yazın:", "Harika!");
+    //     } while (mesaj === null || mesaj.trim() === "");
+
+    //     sonuc += "<p><strong>Mesajınız:</strong> " + mesaj + "</p>";
+    //     document.body.innerHTML = sonuc;
+    //   } else {
+    //     document.write("Lütfen 1 ile 10 arasında bir sayı girin.");
+    //   }
+
+
+    
+
+
+        // Üç döngüyü aynı programda kullanarak bir sayının bölenlerini buluyoruz.
+        var sayi = Number(prompt("Pozitif bir tam sayı girin:"));
+
+        if (Number.isInteger(sayi) && sayi > 0) {
+            var sonuc = "<h2>" + sayi + " sayısının bölenleri</h2><ul>";
+
+            // for döngüsü, 1'den girilen sayıya kadar bütün adayları dener.
+            for (var aday = 1; aday <= sayi; aday++) {
+                var kalan = sayi;
+
+                // while döngüsü, aday sayısını çıkararak tam bölünüp bölünmediğini kontrol eder.
+                while (kalan >= aday) {
+                    kalan -= aday;
+                }
+
+                if (kalan === 0) {
+                    sonuc += "<li>" + aday + " sayısı, " + sayi + " sayısının bölenidir.</li>";
+                }
+            }
+
+            sonuc += "</ul>";
+            var tekrar;
+
+            // do-while döngüsü, sonuç ekranını en az bir kez gösterir ve kullanıcı isterse tekrarlar.
+            do {
+                document.body.innerHTML = sonuc;
+                tekrar = prompt("Sonuç gösterildi. Programı tekrar çalıştırmak ister misiniz? (evet/hayır)");
+            } while (tekrar && tekrar.toLowerCase() === "evet");
+        } else {
+            document.write("Lütfen pozitif bir tam sayı girin.");
+        }
+
+        </script>
+
+</body>
+
+</html>
