@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Örnek</title>
+</head>
+
+<body>
+    <script>
+        // do while döngüsü (basit)
+        var sayac = 0;
+        do {
+            sayac++;
+            console.log("Döngü sayısı: " + sayac);
+        } while (sayac < 5);
+
+
+        // do while döngüsü (toplam)
+        var sayi = Number(prompt("1'den kaç sayıya kadar olan sayıların toplamını görmek istiyorsunuz?"));
+        var toplam = 0;
+        do {
+            toplam++;
+            console.log("Döngü sayısı: " + toplam);
+            // alert("Döngü sayısı: " + toplam);
+            document.write("Döngü sayısı: " + toplam + "<br>");
+        } while (toplam < sayi);
+    </script>
+
+</body>
+
+</html>

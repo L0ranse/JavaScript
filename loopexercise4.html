@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="tr">
+     
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Örnek</title>
+</head>
+
+<body>
+    <script>
+        // // 1'den belirtilen sayı kadar toplamı 
+        // var sayac = Number(prompt("1'den kaç sayıya kadar olan sayıların toplamını görmek istiyorsunuz?"));
+        // var toplam = 0;
+        // do {
+        //     toplam++;
+        //     console.log("Döngü sayısı: " + toplam);
+        //     // alert("Döngü sayısı: " + toplam);
+        //     document.write("Döngü sayısı: " + toplam + "<br>");
+        // } while (toplam < sayac);
+        // console.log("Döngü tamamlandı! Toplam: " + toplam);
+        // // alert("Döngü tamamlandı! Toplam: " + toplam);
+        // document.write("Döngü tamamlandı! Toplam: " + toplam);
+
+
+        // // pozitif sayı girilinceye kadar kullanıcıdan sayı isteyen ve pozitif sayı girilince döngüyü durduran bir do while döngüsü
+        // var sayi;
+        // do {
+        //     sayi = Number(prompt("Lütfen pozitif bir sayı giriniz:"));
+        //     if (sayi < 0) {
+        //         alert("Negatif bir sayı girdiniz. Lütfen pozitif bir sayı giriniz.");
+        //     }
+        // } while (sayi < 0);
+        // alert("Pozitif bir sayı girdiniz. Döngü sona erdi.");
+        // document.write("Pozitif bir sayı girdiniz. Döngü sona erdi.");
+
+   /*
+         * DO...WHILE ÖRNEĞİ: Sayı tahmin oyunu
+         *
+         * do...while döngüsü, önce do bloğundaki kodu çalıştırır,
+         * ardından koşulu kontrol eder. Bu nedenle döngü en az bir kez çalışır.
+         */
+        const gizliSayi = Math.floor(Math.random() * 10) + 1;
+        let tahmin;
+        let denemeSayisi = 0;
+
+        do {
+            // prompt metin döndürür; Number() ile sayıya dönüştürüyoruz.
+            tahmin = Number(prompt("1 ile 10 arasında bir sayı tahmin edin:"));
+
+            // Geçersiz girişte döngü yeniden başlar.
+            if (!Number.isInteger(tahmin) || tahmin < 1 || tahmin > 10) {
+                alert("Lütfen 1 ile 10 arasında tam bir sayı girin.");
+                continue;
+            }
+
+            denemeSayisi++;
+
+            if (tahmin < gizliSayi) {
+                alert("Daha büyük bir sayı deneyin.");
+            } else if (tahmin > gizliSayi) {
+                alert("Daha küçük bir sayı deneyin.");
+            }
+
+            // Koşul, do bloğundan sonra kontrol edilir.
+        } while (tahmin !== gizliSayi);
+
+        // Koşul false olduğunda, yani doğru tahmin yapıldığında döngü biter.
+        alert("Tebrikler! " + denemeSayisi + ". denemede doğru bildiniz.");
+        document.write("<h2>Sayı tahmin oyunu tamamlandı!</h2>");
+        document.write("Gizli sayı: " + gizliSayi + "<br>");
+        document.write("Deneme sayınız: " + denemeSayisi);
+        
+
+    </script>
+
+</body>
+
+</html>
