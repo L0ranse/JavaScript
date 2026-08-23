@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Örnek</title>
+</head>
+
+<body>
+    <script>
+        // //sıfırdan belirtilen sayıya kadar olan sayılar arasından çift sayıları ekrana yazdıran bir for döngüsü
+        // var sayac = Number(prompt("1'den kaç sayıya kadar olan çift sayıları görmek istiyorsunuz?"));
+        // for (let i = 1; i <= sayac; i++) {
+        //     if (i % 2 == 0) {
+        //         console.log("Döngü sayısı: " + i);
+        //         alert("Döngü sayısı: " + i);
+        //         document.write("Döngü sayısı: " + i + "<br>");
+        //     }
+        // }
+
+        // //sıfırdan belirtilen sayıya kadar olan sayılar arasından tek sayıları ekrana yazdıran bir for döngüsü
+        // var sayac = Number(prompt("1'den kaç sayıya kadar olan tek sayıları görmek istiyorsunuz?"));
+        // for (let i = 1; i <= sayac; i++) {
+        //     if (i % 2 != 0) {
+        //         console.log("Döngü sayısı: " + i);
+        //         alert("Döngü sayısı: " + i);
+        //         document.write("Döngü sayısı: " + i + "<br>");
+        //     }
+        // }
+
+
+        // Sıfırdan belirtilen sayıya kadar olan sayılar toplamını ekrana yazdıran bir for döngüsü
+        var sayac = Number(prompt("1'den kaç sayıya kadar olan sayıların toplamını görmek istiyorsunuz?"));
+        var toplam = 0;
+        for (let i = 1; i <= sayac; i++) {
+            toplam += i;
+            console.log("Döngü sayısı: " + i);
+            // alert("Döngü sayısı: " + i);
+            document.write("Döngü sayısı: " + i + "<br>");
+        }
+        console.log("Döngü tamamlandı! Toplam: " + toplam);
+        // alert("Döngü tamamlandı! Toplam: " + toplam);
+        document.write("Döngü tamamlandı! Toplam: " + toplam);
+    </script>
+
+</body>
+
+</html>
