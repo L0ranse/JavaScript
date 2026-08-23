@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Örnek</title>
+</head>
+
+<body>
+    <script>
+        // // 1'den belirtilen sayı kadar toplamı 
+        // var sayac = Number(prompt("1'den kaç sayıya kadar olan sayıların toplamını görmek istiyorsunuz?"));
+        // var toplam = 0;
+        // while (toplam < sayac) {
+        //     toplam++;
+        //     console.log("Döngü sayısı: " + toplam);
+        //     // alert("Döngü sayısı: " + toplam);
+        //     document.write("Döngü sayısı: " + toplam + "<br>");
+        // }
+        // console.log("Döngü tamamlandı! Toplam: " + toplam);
+        // // alert("Döngü tamamlandı! Toplam: " + toplam);
+        // document.write("Döngü tamamlandı! Toplam: " + toplam);
+
+
+        var sayi = Number(prompt("0'dan hangi sayıya kadar kontrol edilsin?"));
+        var ilkSayi = 0;
+
+        while (ilkSayi <= sayi) { // 0'dan belirtilen sayıya kadar olan sayılar arasından toplamı 12 olan sayı çiftlerini ekrana yazdıran bir while döngüsü
+            var ikinciSayi = 0; // ikinci sayıyı sıfırdan başlatıyoruz çünkü her bir ilk sayı için ikinci sayıyı tekrar kontrol etmemiz gerekiyor
+
+            while (ikinciSayi <= sayi) { // ikinci sayıyı sıfırdan belirtilen sayıya kadar kontrol ediyoruz
+                if (ilkSayi + ikinciSayi === 12) { // eğer ilk sayı ile ikinci sayının toplamı 12 ise ekrana yazdırıyoruz
+                    document.write(ilkSayi + " + " + ikinciSayi + " = 12<br>"); // ekrana yazdırma işlemi
+                }
+                ikinciSayi++; // ikinci sayıyı bir artırıyoruz
+            }
+
+            ilkSayi++; // ilk sayıyı bir artırıyoruz
+        }
+
+    </script>
+
+</body>
+
+</html>
