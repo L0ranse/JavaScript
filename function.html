@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Örnek</title>
+</head>
+
+<body>
+    <script>
+        function selamla() {
+            alert("Merhaba, JavaScript!");
+        }
+
+        function topla(a, b) {
+            return a + b;
+        }
+
+        function faktoriyel(n) {
+            if (n === 0 || n === 1) {
+                return 1;
+            } else {
+                return n * faktoriyel(n - 1);
+            }
+        }
+
+        function fibonacci(n) {
+            if (n <= 1) {
+                return n;
+            } else {
+                return fibonacci(n - 1) + fibonacci(n - 2);
+            }
+        }
+
+        function asalMi(sayi) {
+            if (sayi <= 1) {
+                return false;
+            }
+            for (var i = 2; i <= Math.sqrt(sayi); i++) {
+                if (sayi % i === 0) {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+
+
+        function bolenleriBul(sayi) {
+            var bolenler = [];
+            for (var i = 1; i <= sayi; i++) {
+                if (sayi % i === 0) {
+                    bolenler.push(i);
+                }
+            }
+            return bolenler;
+        }
+
+
+
+        function enBuyukOrtakBolen(a, b) {
+            while (b !== 0) {
+                var temp = b;
+                b = a % b;
+                a = temp;
+            }
+            return a;
+        }
+
+        function enKucukOrtakKat(a, b) {
+            return (a * b) / enBuyukOrtakBolen(a, b);
+        }
+
+        function tersCevir(str) {
+            return str.split("").reverse().join("");
+        }
+
+        function kelimeSayisi(str) {
+            return str.trim().split(/\s+/).length;
+        }
+
+        function ciftMi(sayi) {
+            return sayi % 2 === 0;
+        }
+
+        function tekMi(sayi) {
+            return sayi % 2 !== 0;
+        }
+        function kareAl(sayi) {
+            return sayi * sayi;
+        }
+        function kupAl(sayi) {
+            return sayi * sayi * sayi;
+        }
+
+
+
+
+
+
+        selamla();
+        console.log("Toplam: " + topla(5, 10));
+        console.log("Faktöriyel: " + faktoriyel(5));
+        console.log("Fibonacci: " + fibonacci(7));
+        console.log("Asal mı: " + asalMi(13));
+        console.log("Bölenler: " + bolenleriBul(28));
+        console.log("EBOB: " + enBuyukOrtakBolen(48, 18));
+        console.log("EKOK: " + enKucukOrtakKat(4, 6));
+        console.log("Ters Çevir: " + tersCevir("JavaScript"));
+        console.log("Kelime Sayısı: " + kelimeSayisi("JavaScript öğrenmek çok eğlenceli!"));
+        console.log("Çift mi: " + ciftMi(10));
+        console.log("Tek mi: " + tekMi(7));
+        console.log("Kare: " + kareAl(5));
+        console.log("Küp: " + kupAl(3));
+        
+
+    </script>
+
+</body>
+
+</html>
