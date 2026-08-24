@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Örnek</title>
+</head>
+
+<body>
+    <script>
+        // Sınıf tanımlaması
+        class Kisi {
+            constructor(ad, soyad) {
+                this.ad = ad;
+                this.soyad = soyad;
+            }
+
+            // Metot tanımlaması
+            tamIsim() {
+                return `${this.ad} ${this.soyad}`;
+            }
+        }
+
+        var kisi1 = new Kisi("Ahmet", "Yılmaz");
+        alert(kisi1.tamIsim());
+        var kisi2 = new Kisi("Ayşe", "Kara");
+        alert(kisi2.tamIsim());
+        var kisi3 = new Kisi(prompt("Adınızı giriniz:"), prompt("Soyadınızı giriniz:"));
+        alert(kisi3.tamIsim());
+    </script>
+
+</body>
+
+</html>
