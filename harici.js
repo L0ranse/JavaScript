@@ -98,3 +98,14 @@ function degerTuruYazdir(a) {
 
     return typeof a;
 }
+
+
+
+function nKadarYazdir(n, metin = "Varsayılan Metin") {
+    if (typeof n !== "number" || n < 1) {
+        throw new Error("Geçersiz bir sayı girdiniz!");
+    }
+    for (let i = 1; i <= n; i++) {
+        console.log(i + ": " + metin);
+    }
+}
