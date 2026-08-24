@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Örnek</title>
+</head>
+
+<body>
+    <script>
+        // class Person {
+        //     constructor(name, age) {
+        //         this.name = name;
+        //         this.age = age;
+        //     }
+
+        //     greet() {
+        //         console.log(`Merhaba, benim adım ${this.name} ve ben ${this.age} yaşındayım.`);
+        //     }
+        // }
+
+        // const person1 = new Person("Ahmet", 30);
+        // person1.greet(); // Merhaba, benim adım Ahmet ve ben 30 yaşındayım.
+
+        // const person2 = new Person("Ayşe", 25);
+        // person2.greet(); // Merhaba, benim adım Ayşe ve ben 25 yaşındayım.
+
+
+        // const person3 = new Person(prompt("Lütfen adınızı girin:"), parseInt(prompt("Lütfen yaşınızı girin:")));
+        // person3.greet();
+
+
+
+        class Daire {
+            constructor(yariCap) {
+                this.yariCap = yariCap;
+            }
+
+            alanHesapla() {
+                return Math.PI * this.yariCap * this.yariCap;
+            }
+
+            cevreHesapla() {
+                return 2 * Math.PI * this.yariCap;
+            }
+        }
+
+        const daire1 = new Daire(5);
+        console.log(`Dairenin alanı: ${daire1.alanHesapla()}`);
+        console.log(`Dairenin çevresi: ${daire1.cevreHesapla()}`);
+
+
+
+        const daire2 = new Daire(parseFloat(prompt("Lütfen dairenin yarıçapını girin:")));
+        console.log(`Dairenin alanı: ${daire2.alanHesapla()}`);
+        console.log(`Dairenin çevresi: ${daire2.cevreHesapla()}`);
+        console.log(`Dairenin yarıçapı: ${daire2.yariCap}`);
+        console.log(`Dairenin alanı: ${daire2.alanHesapla()}`);
+    </script>
+
+</body>
+
+</html>

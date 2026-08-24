@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Örnek</title>
+</head>
+
+<body>
+    <script>
+        class dikdortgenHesaplama {
+            constructor(kenar1, kenar2) {
+                this.kenar1 = kenar1;
+                this.kenar2 = kenar2;
+            }
+
+            cevreHesapla() {
+                return 2 * (this.kenar1 + this.kenar2);
+            }
+
+            alanHesapla() {
+                return this.kenar1 * this.kenar2;
+            }
+        }
+
+        const dikdortgen1 = new dikdortgenHesaplama(5, 10);
+        console.log(`Dikdörtgenin genişliği: ${dikdortgen1.kenar1}`);
+        console.log(`Dikdörtgenin uzunluğu: ${dikdortgen1.kenar2}`);
+
+        console.log(`Dikdörtgenin çevresi: ${dikdortgen1.cevreHesapla()}`);
+        console.log(`Dikdörtgenin alanı: ${dikdortgen1.alanHesapla()}`);
+
+        const dikdortgen2 = new dikdortgenHesaplama(
+            parseFloat(prompt("Lütfen dikdörtgenin birinci kenarını girin:")),
+            parseFloat(prompt("Lütfen dikdörtgenin ikinci kenarını girin:"))
+        );
+
+        console.log(`Dikdörtgenin genişliği: ${dikdortgen2.kenar1}`);
+        console.log(`Dikdörtgenin uzunluğu: ${dikdortgen2.kenar2}`);
+        console.log(`Dikdörtgenin çevresi: ${dikdortgen2.cevreHesapla()}`);
+        console.log(`Dikdörtgenin alanı: ${dikdortgen2.alanHesapla()}`);
+    </script>
+
+</body>
+
+</html>
