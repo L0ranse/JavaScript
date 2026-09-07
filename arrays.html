@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Örnek</title>
+</head>
+
+<body>
+    <script>
+        var dizi = [10, 20, 30, 40, 50];
+        console.log(`Dizi: ${dizi}`);
+        console.log(`Dizinin uzunluğu: ${dizi.length}`);
+        console.log(`İlk eleman: ${dizi[0]}`);
+        console.log(`Son eleman: ${dizi[dizi.length - 1]}`);
+
+        // Diziye eleman ekleme
+        dizi.push(60);
+        console.log(`Diziye eleman eklendi: ${dizi}`);
+
+        // Dizi elemanını çıkarma
+        var cikarilanEleman = dizi.pop();
+        console.log(`Diziden çıkarılan eleman: ${cikarilanEleman}`);
+        console.log(`Dizi: ${dizi}`);
+
+        // Dizi elemanını başa ekleme
+        dizi.unshift(5);
+        console.log(`Dizinin başına eleman eklendi: ${dizi}`);
+
+        // Dizi elemanını baştan çıkarma
+        var cikarilanIlkEleman = dizi.shift();
+        console.log(`Diziden çıkarılan ilk eleman: ${cikarilanIlkEleman}`);
+        console.log(`Dizi: ${dizi}`);
+
+        // Dizi üzerinde döngü ile gezinme
+        for (var i = 0; i < dizi.length; i++) {
+            console.log(`Dizinin ${i}. elemanı: ${dizi[i]}`);
+        }
+    </script>
+    
+</body>
+
+</html>
