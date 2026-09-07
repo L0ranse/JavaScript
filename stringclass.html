@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Örnek</title>
+</head>
+
+<body>
+    <script>
+        var metin = prompt("Lütfen bir metin girin:");
+        var buyukHarf = metin.toUpperCase();
+        var kucukHarf = metin.toLowerCase();
+        var tersMetin = metin.split("").reverse().join("");
+
+        console.log(`Girilen metin: ${metin}`);
+        console.log(`Büyük harf: ${buyukHarf}`);
+        console.log(`Küçük harf: ${kucukHarf}`);
+        console.log(`Ters metin: ${tersMetin}`);
+        // metin kelimelerinin tersi yazdırılır
+
+        const kelimeler = metin.split(" ");
+        const tersKelimeler = kelimeler.reverse().join(" ");
+        console.log(`Ters kelimeler: ${tersKelimeler}`);
+
+        var uzunluk = metin.length;
+        console.log(`Metin uzunluğu: ${uzunluk} karakter`);
+
+        for (var i = 0; i < metin.length; i++) {
+            console.log(`Karakter ${i + 1}: ${metin[i]}`);
+        }
+
+    </script>
+</body>

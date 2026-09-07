@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Örnek</title>
+</head>
+
+<body>
+    <script>
+        var tarih = new Date();
+        console.log(`Şu anki tarih ve saat: ${tarih}`);
+
+        var yil = tarih.getFullYear();
+        var ay = tarih.getMonth() + 1; // Aylar 0'dan başlar, bu yüzden 1 ekliyoruz
+        var gun = tarih.getDate();
+        var saat = tarih.getHours();
+        var dakika = tarih.getMinutes();
+        var saniye = tarih.getSeconds();
+        var milisaniye = tarih.getMilliseconds();
+        var gunAdi = tarih.toLocaleString('tr-TR', { weekday: 'long' });
+        var ayAdi = tarih.toLocaleString('tr-TR', { month: 'long' });
+        var tarihString = `${gun} ${ayAdi} ${yil}, ${saat}:${dakika}:${saniye}`;
+        var tarihKisa = tarih.toLocaleDateString('tr-TR');
+        var saatKisa = tarih.toLocaleTimeString('tr-TR');
+        var tarihUzun = tarih.toLocaleString('tr-TR', { dateStyle: 'full', timeStyle: 'long' });
+        var tarihKisa2 = tarih.toLocaleString('tr-TR', { dateStyle: 'short', timeStyle: 'short' });
+        var tarihOrta = tarih.toLocaleString('tr-TR', { dateStyle: 'medium', timeStyle: 'medium' });
+        var tarihUzun2 = tarih.toLocaleString('tr-TR', { dateStyle: 'long', timeStyle: 'long' });
+        var tarihOrta2 = tarih.toLocaleString('tr-TR', { dateStyle: 'full', timeStyle: 'short' });
+
+        console.log(`Yıl: ${yil}`);
+        console.log(`Ay: ${ay}`);
+        console.log(`Gün: ${gun}`);
+        console.log(`Saat: ${saat}`);
+        console.log(`Dakika: ${dakika}`);
+        console.log(`Saniye: ${saniye}`);
+        console.log(`Milisaniye: ${milisaniye}`);
+        console.log(`Gün adı: ${gunAdi}`);
+        console.log(`Ay adı: ${ayAdi}`);
+        console.log(`Tarih (string): ${tarihString}`);
+        console.log(`Tarih (kısa): ${tarihKisa}`);
+        console.log(`Saat (kısa): ${saatKisa}`);
+        console.log(`Tarih (uzun): ${tarihUzun}`);
+        console.log(`Tarih (kısa 2): ${tarihKisa2}`);
+        console.log(`Tarih (orta): ${tarihOrta}`);
+        console.log(`Tarih (uzun 2): ${tarihUzun2}`);
+        console.log(`Tarih (orta 2): ${tarihOrta2}`);
+        
+
+    </script>
+</body>
