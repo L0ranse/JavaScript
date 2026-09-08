@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Dökümanı</title>
+</head>
+
+<body>
+    <h1 id="title">JavaScript Dökümanı</h1>
+    <p id="description">Bu döküman JavaScript'in document nesnesi ile ilgili özellikleri göstermektedir.</p>
+    <p id="author">Yazar: John Doe</p>
+    <img src="turk-bayragi-black.png" alt="Türk Bayrağı" id="flag" onmouseover="albayrak()" onmouseout="karaBayrak()"
+        style="width: 100px;">
+    <script>
+        // içerik değiştirme 
+        document.getElementById("title").innerHTML = "JavaScript Dökümanı - Güncellendi";
+        document.getElementById("description").innerHTML = "Bu döküman JavaScript'in document nesnesi ile ilgili özellikleri göstermektedir. (Güncellenmiş)";
+        document.getElementById("author").innerHTML = "Yazar: Jane Smith";
+
+
+        // görselleştirme
+
+
+        document.getElementById("title").style.color = "blue";
+        document.getElementById("description").style.fontSize = "18px";
+        document.getElementById("author").style.fontStyle = "italic";
+        document.getElementById("flag").style.width = "200px";
+
+
+
+        // özellik değiştirme
+
+        var bayrak = document.getElementById("flag");
+        bayrak.setAttribute("alt", "Güncellenmiş Türk Bayrağı");
+
+
+        function albayrak() {
+            bayrak.src = "turk-bayragi.png";
+        }
+
+        function karaBayrak() {
+            bayrak.src = "turk-bayragi-black.png";
+        }
+
+    </script>
+
+</body>
+
+</html>
