@@ -1,0 +1,36 @@
+<head>
+    <title></title>
+</head>
+
+<body>
+    <h2>Linkler</h2>
+    <a href="bizkimiz.html">Biz Kimiz</a> |
+    <a href="iletisim.html">İletişim</a> |
+    <a href="test.html">Test</a>
+
+    <h2>Resimler</h2>
+    <img src="turk-bayragi.png">
+    <img src="turk-bayragi-black.png">
+
+    <h2>Form</h2>
+    <form name="test">
+        Ad: <input type="text"><br>
+        Soyad: <input type="text"><br>
+        <input type="button" value="Tıkla" onclick="yaz()">
+        <input type="reset" value="Sıfırla">
+    </form>
+
+    <script>
+        // document dizileri
+        document.write("link[0]:" + document.links[0] + "<br>");
+        document.write("resim sayısı:" + document.images.length + "<br>");
+        document.write("test formu eleman sayısı:" + document.forms["test"].length + "<br>");
+
+        function yaz() {
+            var test = document.forms["test"];
+            for (var i = 0; i < test.length; i++) {
+                document.write(test.elements[i].value + "<br>");
+            }
+        }
+    </script>
+</body>
