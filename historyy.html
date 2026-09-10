@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Örnek</title>
+</head>
+
+<body>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+        function goForward() {
+            window.history.forward();
+        }
+        function goToPage() {
+            window.location.href = "https://www.example.com";
+        }
+        function reloadPage() {
+            window.location.reload();
+        }
+
+    </script>
+    <button onclick="goBack()">Geri Git</button> |
+    <button onclick="goForward()">İleri Git</button> |
+    <button onclick="goToPage()">Sayfaya Git</button> |
+    <button onclick="reloadPage()">Sayfayı Yenile</button>
+</body>
+
+</html>
