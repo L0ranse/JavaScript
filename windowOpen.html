@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Örnek</title>
+</head>
+
+<body>
+    <script>
+        function openWindow() {
+            window.open("https://www.example.com", "_blank", "width=600,height=400");
+
+        }
+        function openWindow2() {
+            window.open("sablon.html", "_blank", "width=600,height=400");
+        }
+    </script>
+    <input type="button" value="Yeni Pencere Aç" onclick="openWindow()">
+    <input type="button" value="Yeni Pencere Aç (sablon.html)" onclick="openWindow2()">
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Örnek</title>
+</head>
+
+<body>
+    <script>
+        var i = 0;
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "<b>" + i + "<br></b>"; i++;
+        }
+        window.setInterval(myFunction, 1000);
+
+    </script>
+    <div id="demo"></div>
+</body>
+
+</html>
