@@ -5,10 +5,18 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Open current HTML file",
-            "type": "msedge",
+            "name": "Launch Edge",
             "request": "launch",
-            "file": "${file}"
-        }
+            "type": "msedge",
+            "url": "${file}",
+            "webRoot": "${workspaceFolder}"
+        },
+
+        // {
+        //     "type": "editor-browser",
+        //     "request": "launch",
+        //     "name": "Open current HTML file",
+        //     "url": "${file}"
+        // }
     ]
 }

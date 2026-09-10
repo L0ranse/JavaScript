@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Örnek</title>
+</head>
+
+<body onload="Hi()">
+    <button id="myButton" onclick="showDate()">Click me!</button>
+    <p id="dateDisplay">Today's date will be displayed here.</p>
+    <script>
+
+        function Hi() {
+            alert("Hello!");
+        }
+        function showDate() {
+            var date = new Date();
+            var year = date.getFullYear();
+            var month = date.getMonth() + 1; // Aylar 0'dan başlar, bu yüzden 1 ekliyoruz
+            var day = date.getDate();
+            var formattedDate = year + '-' + (month < 10 ? '0' + month : month) + '-' + (day < 10 ? '0' + day : day);
+            document.getElementById("dateDisplay").innerHTML = "Today's date: " + formattedDate;
+        }
+    </script>
+
+</body>
+
+</html>

@@ -8,10 +8,12 @@
 </head>
 
 <body>
-    <h1 id="id1">Başlık Metni</h1>
+    <h1 id="id1" onclick="this.innerHTML='Tıklandı!'" onmousemove="this.style.backgroundColor='lightgray'"
+        onmouseout="this.style.backgroundColor='white'">Başlık Metni</h1>
     <button onclick="document.getElementById('id1').style.color='red'">Tıkla</button>
     <script>
-
+        alert("Sayfa yüklendi");
+        console.log("Sayfa yüklendi");
     </script>
 
 </body>
