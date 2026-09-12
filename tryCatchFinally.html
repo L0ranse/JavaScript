@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Örnek</title>
+</head>
+
+<body>
+    <script>
+        try {
+            // Hata oluşturabilecek kod
+            var result = riskyOperation();
+            console.log("Sonuç: " + result);
+        } catch (error) {
+            // Hata yakalama
+            console.error("Bir hata oluştu: " + error.message);
+        } finally {
+            // Her durumda çalışacak kod
+            console.log("Try-catch bloğu tamamlandı.");
+        }
+
+        function riskyOperation() {
+            // Bu fonksiyon hata oluşturabilir
+            throw new Error("Bu bir test hatasıdır.");
+        }
+    </script>
+
+</body>
+
+</html>
