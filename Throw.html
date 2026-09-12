@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Örnek</title>
+</head>
+
+<body>
+    <p>Lütfen 5 ile 10 arasında bir sayı girin.</p>
+    <input type="number" id="numberInput">
+    <button onclick="checkNumber()">Kontrol Et</button>
+    <p id="result"></p>
+    <script>
+        function checkNumber() {
+            var number = parseInt(document.getElementById("numberInput").value);
+            try {
+                if (isNaN(number)) {
+                    throw new Error("Lütfen geçerli bir sayı girin.");
+                }
+                if (number < 5 || number > 10) {
+                    throw new Error("Sayı 5 ile 10 arasında olmalıdır.");
+                }
+                document.getElementById("result").textContent = "Girilen sayı: " + number;
+            } catch (error) {
+                document.getElementById("result").textContent = "Hata: " + error.message;
+            }
+        }
+    </script>
+
+</body>
+
+</html>
