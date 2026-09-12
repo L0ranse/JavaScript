@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Örnek</title>
+</head>
+
+<body>
+    <form>
+        Sayı1: <input type="number" id="sayiInput"><br><br>
+        Sayı2: <input type="number" id="sayiInput2"><br><br>
+        <button type="button" onclick="toplam()">Toplam</button>
+        <input type="number" id="sayiTotalInput"><br><br>
+    </form>
+
+    <script>
+        alert("Toplamayı hesaplamak için ekrandan sayılar giriniz ve ardından 'Toplam' butonuna tıklayınız.");
+        function toplam() {
+            var sayi1 = document.getElementById("sayiInput").value;
+            var sayi2 = document.getElementById("sayiInput2").value;
+            var toplam;
+            if (sayi1 === "" || sayi2 === "") {
+                alert("Lütfen her iki sayıyı da giriniz.");
+                return;
+            }
+            else if (sayi1 < 0 || sayi2 < 0) {
+                alert("Lütfen negatif olmayan sayılar giriniz.");
+                return;
+            }
+            else {
+                toplam = parseInt(sayi1) + parseInt(sayi2);
+                alert("Girdiğiniz sayıların toplamı: " + toplam);
+                document.getElementById("sayiInput").value = "";
+                document.getElementById("sayiInput2").value = "";
+                document.getElementById("sayiTotalInput").value = toplam;
+                document.getElementById("sayiTotalInput").focus();
+            }
+        }
+    </script>
+
+</body>
+
+</html>

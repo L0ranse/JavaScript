@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Örnek</title>
+</head>
+
+<body>
+    <form>
+        Sayı: <input type="number" id="sayiInput"><br><br>
+        <button type="button" onclick="kareHesapla()">Kare Hesapla</button>
+    </form>
+
+    <script>
+        alert("Kare hesaplamak için ekrandan sayı giriniz ve ardından 'Kare Hesapla' butonuna tıklayınız.");
+        function kareHesapla() {
+            var sayi = document.getElementById("sayiInput").value;
+            var kare = sayi * sayi;
+            alert("Girdiğiniz sayının karesi: " + kare);
+        }
+    </script>
+
+</body>
+
+</html>

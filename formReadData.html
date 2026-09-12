@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Örnek</title>
+</head>
+
+<body>
+    <form>
+        Ad: <input type="text" id="nameInput"><br><br>
+        <button onclick="saveName()">Kaydet</button>
+    </form>
+
+    <script>
+        function saveName() {
+            var name = document.getElementById("nameInput").value;
+            localStorage.setItem("savedName", name);
+            alert("Ad kaydedildi: " + name);
+        }
+    </script>
+
+</body>
+
+</html>

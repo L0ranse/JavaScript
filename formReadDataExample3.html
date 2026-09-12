@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Örnek</title>
+</head>
+
+<body>
+    <form>
+        Vize Notu: <input type="number" id="midtermInput"><br><br>
+        Final Notu: <input type="number" id="finalInput"><br><br>
+        Not Hesapla: <button type="button" onclick="calculateGrade()">Hesapla</button><br><br>
+        <div id="result">
+            Vize Notu: <span id="midtermGrade"></span><br>
+            Final Notu: <span id="finalGrade"></span><br>
+            Ortalama: <span id="averageGrade"></span><br>
+            Harf Notu: <span id="letterGrade"></span><br>
+            Başarı Durumu: <span id="passStatus"></span><br>
+            Tavsiye: <span id="advice"></span>
+        </div>
+    </form>
+    <script>
+
+        function calculateGrade() {
+            var midterm = parseFloat(document.getElementById("midtermInput").value);
+            var final = parseFloat(document.getElementById("finalInput").value);
+
+            if (isNaN(midterm) || isNaN(final)) {
+                alert("Lütfen geçerli sayılar giriniz.");
+                return;
+            }
+
+            if (midterm < 0 || midterm > 100 || final < 0 || final > 100) {
+                alert("Notlar 0 ile 100 arasında olmalıdır.");
+                return;
+            }
+
+            var average = (midterm * 0.4) + (final * 0.6);
+            var letterGrade;
+            var passStatus;
+
+            if (average >= 90) {
+                letterGrade = "<b>AA</b>";
+                passStatus = "<i>Geçti</i>";
+            } else if (average >= 80) {
+                letterGrade = "<b>BA</b>";
+                passStatus = "<i>Geçti</i>";
+            } else if (average >= 70) {
+                letterGrade = "<b>BB</b>";
+                passStatus = "<i>Geçti</i>";
+            } else if (average >= 60) {
+                letterGrade = "<b>CB</b>";
+                passStatus = "<i>Geçti</i>";
+            } else if (average >= 50) {
+                letterGrade = "<b>CC</b>";
+                passStatus = "<i>Geçti</i>";
+            } else {
+                letterGrade = "<b>FF</b>";
+                passStatus = "<i>Kaldı</i>";
+            }
+
+            document.getElementById("letterGrade").innerHTML = letterGrade;
+            document.getElementById("passStatus").innerHTML = passStatus;
+            document.getElementById("midtermGrade").textContent = midterm;
+            document.getElementById("finalGrade").textContent = final;
+            document.getElementById("averageGrade").textContent = average.toFixed(2);
+            document.getElementById("midtermInput").value = "";
+            document.getElementById("finalInput").value = "";
+            var advice;
+            if (average >= 90) {
+                advice = "Tebrikler! Mükemmel bir sonuç aldınız.";
+            } else if (average >= 80) {
+                advice = "Çok iyi! Başarınızı korumak için düzenli çalışmaya devam edin.";
+            } else if (average >= 70) {
+                advice = "İyi gidiyorsunuz. Konuları tekrar ederek notunuzu daha da yükseltebilirsiniz.";
+            } else if (average >= 60) {
+                advice = "Geçtiniz; ancak daha iyi bir sonuç için biraz daha fazla pratik yapın.";
+            } else if (average >= 50) {
+                advice = "Sınırda geçtiniz. Eksik olduğunuz konuları tekrar etmeniz önerilir.";
+            } else {
+                advice = "Başarısız oldunuz. Daha fazla çalışın ve öğretmeninizden destek alın.";
+            }
+            document.getElementById("advice").textContent = advice;
+        }
+    </script>
+
+</body>
+
+</html>
